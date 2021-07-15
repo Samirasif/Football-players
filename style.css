@@ -18,13 +18,17 @@ body{
     width: 168px;
     height: 44px;
     background-color: #E02C6D;
-    margin-top: 20px;
 } .site-link a{
     text-decoration: none;
     color: white;
-    padding: 30px 20px;
-    
-    
+    padding: 30px 20px;   
+}
+.site-link:hover{
+    background-color: darkred;
+    width: 200px;
+    height: 100px;
+    transform: rotate(360deg);
+    transition: width 4s,height 4s,transform 4s;
 }
 .image img{
     width: 556px;
@@ -39,19 +43,48 @@ body{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(4,1fr);
-    grid-gap: 3em;
+    grid-gap: 1.5em;
+    padding: 30px;
+    
 }
 .box{
     width: 330px;
     height: 474px;
     border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 20px;
     
 }
 .player img{
     width: 300px;
     height: 300px;
-    padding: 10px;
+    padding: 15px;
 
 } .player-bio{
-    padding-left: 15px;
+    padding-left: 20px;
+    
+}.player-bio p{
+    font-size: 12px;
+
+}
+
+
+/* .......footer-side ******/
+.last-part{
+    width:483px;
+    height: 213px;    
+}
+.logo{
+    position: relative;
+    padding: 0 50%;
+}
+.logo img{
+width: 483px;
+height: 110px;
+}
+.icons{
+    width: 483px;
+    height:110px ;
+    position: relative;
+    margin-left: 95%;
 }
