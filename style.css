@@ -6,6 +6,7 @@ body{
 .container{
     display: flex;
     background-color: navy;
+    padding-left: 20px;
 } .site-page{
     color: white;
     
@@ -21,7 +22,8 @@ body{
 } .site-link a{
     text-decoration: none;
     color: white;
-    padding: 30px 20px;   
+    padding: 30px;
+   
 }
 .site-link:hover{
     background-color: darkred;
@@ -33,6 +35,7 @@ body{
 .image img{
     width: 556px;
     height: 438px;
+    padding-left: 20px;
 }
 /* End of first banner */
 
@@ -67,24 +70,72 @@ body{
     font-size: 12px;
 
 }
+/* added part */
 
+.coaches{
+   
+    padding-left: 20px;
+}
+.display{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.img-coach img{
+    width: 200px;
+    height: 200px;
+}
+.blog-info a{
+ text-decoration: none;
+}
+.blog-info{
+    margin-left: 15px;
+}
+.blog{
+    display: flex;
+    height: 250px;
+    width: 400px;
+    padding: 10px;
+}
 
 /* .......footer-side ******/
 .last-part{
     width:483px;
-    height: 213px;    
+    height: 213px;
+    margin-left: 25%;
+        
 }
 .logo{
     position: relative;
-    padding: 0 50%;
 }
 .logo img{
 width: 483px;
 height: 110px;
 }
 .icons{
+    
     width: 483px;
-    height:110px ;
     position: relative;
-    margin-left: 95%;
+     margin-left: 120px;
+}
+.icons a{
+ color:gray;
+ padding-right: 10px;
+}
+.last-part p{
+    text-align: center;
+
+}
+/* responsive side */
+
+@media mobile screen and (max-width:600px){
+    .container{
+        width:100%;
+        height:100%;
+        display:inline;
+    }
+    
+    
+}
+@media  and(min-width:992px) {
+    
 }
