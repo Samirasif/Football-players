@@ -38,6 +38,7 @@ a {
     width: 329px;
     height: 259.17px;
     margin: 0 16px 0 15px;
+    padding-top: 10px;
     background: url(1648334-world-cup-football-player-kick-off-football-kick-football-png-980_772_preview.png);
 
 }
@@ -112,6 +113,46 @@ a {
 .title {
     color: black;
 }
+/* trial */
+
+
+.coaches {
+
+    padding-left: 20px;
+}
+
+.display {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.img-coach img {
+    width: 200px;
+    height: 200px;
+}
+
+.blog-info a {
+    text-decoration: none;
+}
+
+.blog-info {
+    margin-left: 15px;
+}
+
+.blog {
+    display: flex;
+    height: 250px;
+    width: 400px;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
 /* footer */
 
 
@@ -145,7 +186,7 @@ padding-left: 10px;
     padding-left: 60px;
 
 }
-
+/* highlights section */
 .high-light h1 {
     width: 292px;
     font-family: Poppins;
@@ -181,6 +222,9 @@ padding-left: 10px;
     .player {
         margin: 0 auto;
     }
+    .display{
+        grid-template-columns: repeat(1, 1fr);
+    }
 
     @media (min-width:670px) {
         .container {
@@ -196,6 +240,9 @@ padding-left: 10px;
             grid-template-columns: auto;
             grid-column-gap: auto;
             grid-row-gap: 24px;
+        }
+        .display{
+            grid-template-columns: repeat(2, 1fr);
         }
 
     }
@@ -213,6 +260,9 @@ padding-left: 10px;
         .col img {
             margin: 0;
         }
+        .display{
+            grid-template-columns: repeat(2,1fr);
+        }
     }
 
     @media (min-width:1050px) {
@@ -220,6 +270,9 @@ padding-left: 10px;
         .players-container {
             grid-template-columns: auto auto auto;
 
+        }
+        .display{
+            grid-template-columns: repeat(3,1fr);
         }
 
     }
