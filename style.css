@@ -1,141 +1,225 @@
-body{
-    font-family: 'Poppins', sans-serif;
+* {
     margin: 0;
     padding: 0;
-}
-.container{
-    display: flex;
-    background-color: navy;
-    padding-left: 20px;
-} .site-page{
-    color: white;
-    
-} .site-page h1{
-    width: 485px;
-    height: 230px;
-    font-size: 64px;
-}
-.site-link{
-    width: 168px;
-    height: 44px;
-    background-color: #E02C6D;
-} .site-link a{
     text-decoration: none;
-    color: white;
-    padding: 30px;
-   
+    box-sizing: border-box;
+
 }
-.site-link:hover{
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(250, 249, 249);
+}
+
+.container {
+    background: #2D25A0;
+    display: flex;
+    flex-direction: column;
+}
+
+.col {
+    width: 100%;
+}
+
+.col h1 {
+    width: 278px;
+    font-family: Poppins;
+    font-size: 50px;
+    line-height: 50px;
+    color: #FFFFFF;
+    margin: 52px 0 30px 16px;
+}
+
+a {
+    color: white;
+}
+
+.col img {
+    width: 329px;
+    height: 259.17px;
+    margin: 0 16px 0 15px;
+    background: url(1648334-world-cup-football-player-kick-off-football-kick-football-png-980_772_preview.png);
+
+}
+
+.btn {
+
+    background: #E02C6D;
+    border: none;
+    color: white;
+    margin-left: 19px;
+
+}
+.btn:hover{
     background-color: darkred;
     width: 200px;
     height: 100px;
     transform: rotate(360deg);
     transition: width 4s,height 4s,transform 4s;
 }
-.image img{
-    width: 556px;
-    height: 438px;
-    padding-left: 20px;
+.watch-btn {
+    font-size: 16px;
+    font-weight: 500;
+    width: 168px;
+    height: 44px;
+    padding: 10px 24px;
+    margin-bottom: 50px;
+
 }
-/* End of first banner */
 
+.watch-btn i {
+    margin-left: 8px;
+}
 
+.high-light {
+    background-color: white !important;
+}
 
 /* players description */
-.all-players{
+.players-container {
+    padding: 15px;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);
-    grid-gap: 1.5em;
-    padding: 30px;
-    
+    grid-template-columns: auto;
+    grid-row-gap: 24px;
+
 }
-.box{
+
+.player {
     width: 330px;
     height: 474px;
-    border: 1px solid gray;
-    border-radius: 5px;
-    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 15px 15px 0 15px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+}
+
+.player img {
+    width: 100%;
+    height: 256px;
+}
+
+.player h2 {
+    margin: 10px 0;
+}
+
+.player p {
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+
+.title {
+    color: black;
+}
+/* footer */
+
+
+
+.logo {
+    padding: 0 71px 0 18px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.social-icons a { 
+color: gray;
+padding-left: 10px;
     
 }
-.player img{
-    width: 300px;
-    height: 300px;
-    padding: 15px;
 
-} .player-bio{
-    padding-left: 20px;
-    
-}.player-bio p{
-    font-size: 12px;
 
-}
-/* added part */
-
-.coaches{
-   
-    padding-left: 20px;
-}
-.display{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-}
-.img-coach img{
-    width: 200px;
-    height: 200px;
-}
-.blog-info a{
- text-decoration: none;
-}
-.blog-info{
-    margin-left: 15px;
-}
-.blog{
-    display: flex;
-    height: 250px;
-    width: 400px;
-    padding: 10px;
-}
-
-/* .......footer-side ******/
-.last-part{
-    width:483px;
-    height: 213px;
-    margin-left: 25%;
-        
-}
-.logo{
-    position: relative;
-}
-.logo img{
-width: 483px;
-height: 110px;
-}
-.icons{
-    
-    width: 483px;
-    position: relative;
-     margin-left: 120px;
-}
-.icons a{
- color:gray;
- padding-right: 10px;
-}
-.last-part p{
+.text-center {
     text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 24px;
+}
+
+.social-icons {
+    width: 300px;
+    margin: 0 auto;
+    padding-left: 60px;
 
 }
-/* responsive side */
 
-@media mobile screen and (max-width:600px){
-    .container{
-        width:100%;
-        height:100%;
-        display:inline;
+.high-light h1 {
+    width: 292px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 40px;
+    color: #0A0826;
+}
+
+.high-light p {
+    width: 329px;
+
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6C6C6C;
+    margin-left: 15px;
+    margin-bottom: 24px;
+}
+
+@media (min-width:361px) {
+
+    .col img {
+        width: 100%;
+        height: auto;
+        margin: 0;
     }
-    
-    
-}
-@media  and(min-width:992px) {
-    
-}
+
+    .player {
+        margin: 0 auto;
+    }
+
+    @media (min-width:670px) {
+        .container {
+            flex-direction: row;
+            margin-bottom: 47px;
+        }
+
+        .col img {
+            margin-top: 52px;
+        }
+
+        .players-container {
+            grid-template-columns: auto;
+            grid-column-gap: auto;
+            grid-row-gap: 24px;
+        }
+
+    }
+
+    @media (min-width:800px) {
+        .players-container {
+            grid-template-columns: auto auto;
+
+        }
+
+        .players-container {
+            padding: 0;
+        }
+
+        .col img {
+            margin: 0;
+        }
+    }
+
+    @media (min-width:1050px) {
+
+        .players-container {
+            grid-template-columns: auto auto auto;
+
+        }
+
+    }
